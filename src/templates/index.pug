@@ -6,36 +6,64 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
         link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
     body
 
-        header
+        header.header-container
             nav
                 p ALISHA
                 ul
-                    li HOME
-                    li ABOUT
-                    li TEAM
-                    li SERVICES
-                    li BLOG
-                    li Contact
-        
+                    li
+                        a(href='#home') Home
+                    li
+                        a(href='#news') About
+                    li
+                        a(href='#contact') Team
+                    li(style='float:right')
+                        a.active(href='#about') Services
+                    li(style='float:right')
+                        a.active(href='#about') Blog
+                    li(style='float:right')
+                        a.active(href='#about') Contact
 
-        section
-            p Our Portfolio
-            p Lorem Ipsum is simply dummy text of the printing and typesetting industry
-            ul
-                li ALL
-                li DESIGN
-                li DEVELOPMENT
-                li BRANDING
-                li ILLUSTRATION
-                li PHOTOGRAPHY
+            
+            .text-slider
+                p.title-slider We are Alisha
+                p.description-slider Creative Digital Agency
 
-        section
-            p Have any project in mind?
+                p  
+                    i.material-icons add 
+                    | All projects
+            
+            .button-navigation-direction
+                .button-direcction
+                    i.material-icons face
+                    i.material-icons face
+
+                .direcction-count
+                    p 1 / 4
+
+
+
+        section.section-our-portfolio
+            aside.container-header-portfolio
+                p.subtitle-page Our Portfolio
+                p.description-profolio-page Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                ul
+                    li ALL
+                    li DESIGN
+                    li DEVELOPMENT
+                    li BRANDING
+                    li ILLUSTRATION
+                    li PHOTOGRAPHY
+
+        section.section-project
+            p.text-project Have any project in mind?
             button Let's Work Together            
 
-
+    
         footer
             div
                 | Contant Us
