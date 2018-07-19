@@ -35,13 +35,36 @@ gulp.task('js',()=>{
       .pipe(gulp.dest('./build/js'))
       .pipe(connect.reload());
 });
+
   
-  
+gulp.task('img',()=>{
+  gulp.src('./src/img/**/*.jpeg')
+      .pipe(gulp.dest('./build/img'))
+      .pipe(connect.reload());
+});
+
+gulp.task('fonts',()=>{
+  gulp.src('./src/fonts/**/*.ttf')
+      .pipe(gulp.dest('./build/fonts'))
+      .pipe(connect.reload());
+});
+
+
+gulp.task('normalize',()=>{
+  gulp.src('./node_modules/normalize.css/*.css')
+      .pipe(gulp.dest('./build/css'))
+      .pipe(connect.reload());
+});
+
+
 gulp.task('watch', function () {
   gulp.watch('./src/sass/**/*.sass', ['sass']);
   gulp.watch('./src/templates/*.pug',['html']);
   gulp.watch('./src/js/**/*.js',['js']);
+  gulp.watch('./src/img/**/*.jpeg',['img']);
+
 });
 
 
-gulp.task('default', [ 'watch' ,'connect' ]);
+gulp.task('default', ['html','sass','js',
+   'img','fonts','normalize','watch' ,'connect' ]);

@@ -10,5 +10,8 @@
     "gulp-connect": "^5.5.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
   }
 }
