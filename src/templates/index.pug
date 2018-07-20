@@ -32,8 +32,6 @@ html(lang="en")
             .text-slider
                 p.title-slider We are Alisha
                 p.description-slider Creative Digital Agency
-
-                p  
                     i.material-icons add 
                     | All projects
             
@@ -60,6 +58,20 @@ html(lang="en")
                     li ILLUSTRATION
                     li PHOTOGRAPHY
 
+            aside.container-grib-image
+                img(src="/img/grib/a.jpg", alt="")
+                img(src="/img/grib/b.jpg", alt="")
+                img(src="/img/grib/c.jpg", alt="")
+                img(src="/img/grib/d.jpg", alt="")
+                img(src="/img/grib/e.jpg", alt="")
+
+                img(src="/img/grib/a.jpg", alt="")
+                img(src="/img/grib/b.jpg", alt="")
+                img(src="/img/grib/c.jpg", alt="")
+                img(src="/img/grib/d.jpg", alt="")
+                img(src="/img/grib/e.jpg", alt="")        
+                img(src="/img/grib/e.jpg", alt="")                     
+
         section.section-project
             .asent-project
             p.text-project Have any project in mind?
@@ -75,11 +87,11 @@ html(lang="en")
                     p +88 0 (123) 4521
                     .asent-icons
                         img(src="img/icons/facebook-logo.png", alt="")
-                        img(src="img/icons/facebook-logo.png", alt="")
-                        img(src="img/icons/facebook-logo.png", alt="")
-                        img(src="img/icons/facebook-logo.png", alt="")
-                        img(src="img/icons/facebook-logo.png", alt="")
-                        img(src="img/icons/facebook-logo.png", alt="")
+                        img(src="img/icons/twitter-logo-silhouette.png", alt="")
+                        img(src="img/icons/linkedin-logo.png", alt="")
+                        img(src="img/icons/instagram-logo.png", alt="")
+                        img(src="img/icons/vimeo-logo.png", alt="")
+                        img(src="img/icons/pinterest.png", alt="")
 
                 
                 .asent-links
@@ -91,13 +103,16 @@ html(lang="en")
                 
                 .asent-post
                     p.header-asent Recent Post
-                    img(src="", alt="")
-                    p What is the best web
-                    p 27 may 2018
-
-                    img(src="", alt="")
-                    p Basic Of Ui/Ux
-                    p 22 may 2018
+                    .container-post
+                        img(src="/img/post/bathroom.jpeg", alt="")
+                        p.title-post What is the best web
+                        .separe-data-title
+                            p 27 may 2018
+                    .container-post
+                        img(src="/img/post/cofe.jpg", alt="")
+                        p.title-post Basic Of Ui/Ux
+                        .separe-data-title
+                            p 22 may 2018
 
 
                 .asent-news
@@ -105,12 +120,21 @@ html(lang="en")
                     input(type="email", name="" placeholder="Email")
                     button SUBSCRIBE
 
-            div(class="down")
-                p.date-page-footer Aisiha 2018
+            .down-footer
+               
+                p.date-page-footer ALISHA
+                    
+                ul
+                    li
+                        a(href='#home') Home
+                    li
+                        a(href='#news') About
+                    li
+                        a(href='#contact') Team
+                    li(style='float:right')
+                        a.active(href='#about') Services
+                    li(style='float:right')
+                        a.active(href='#about') Blog
+                    li(style='float:right')
+                        a.active(href='#about') Contact
 
-                .down-menu
-                    p HOME 
-                    p ABOUT
-                    P TEAM
-                    P BLOG
-                    P CONTACT

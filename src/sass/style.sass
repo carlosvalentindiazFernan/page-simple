@@ -61,12 +61,18 @@ body
             font-size: 2em
             text-align: center
 
-        .description-profolio-page
+        p.description-profolio-page
             margin-top: -2em
             text-align: center
             font-weight: 200
         ul
             list-style-type: none
+            display: flex
+            justify-content: center
+            align-items: center
+
+            li
+                padding: 0.5em
 
 
 .section-project
@@ -92,8 +98,10 @@ section.section-project
 footer
     background: #2b2b2b
     color: #ffffff
+    padding: 2em
     .container-footer
         display: flex
+        flex-wrap: wrap
         justify-content: space-around
         font-weight: 200
         .asent-news
@@ -108,7 +116,37 @@ footer
                 background: #ffffff
                 cursor: pointer
                 height: 6vh
- 
+
+        .asent-post
+            .container-post
+                display: flex
+                img
+                    width: 60px
+                    height: 60px
+                p.title-post
+                    font-weight: 600
+    
+    .down-footer
+        border-top-color: #767676
+        border-top-style: solid
+        p.date-page-footer
+            float: left
+            margin-left: 1.5em
+        ul
+            list-style-type: none
+            overflow: hidden
+            font-weight: 200
+            margin-right: 2em
+            li
+                float: right
+
+            li a
+                color: #ffffff
+                margin-left: 1em            
+                display: block
+                text-decoration: none
+                text-align: center
+
 p.header-asent
     font-weight: 700
     font-size: 20px
@@ -116,3 +154,6 @@ p.header-asent
 .asent-icons
     display: flex
     justify-content: space-between
+
+.down-menu
+    p.date-page-footer
