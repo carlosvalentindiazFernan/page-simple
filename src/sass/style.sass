@@ -24,6 +24,17 @@ body
     
         @include listMixin($accent-color)
         
+    @media only screen and (max-width: 768px)
+        nav
+            background: $accent-color
+            color: $primary-color
+            width: 100%
+            height: 15%
+            ul
+                color: $primary-color
+                li > a 
+                    color: $primary-color
+
     .text-slider
         width: 85%
         float: right
@@ -41,7 +52,9 @@ body
 
         .text-all-projects
             margin-left: 10em
-                    
+    @media only screen and (max-width: 566px)
+        .title-slider
+            font-size: 2.2em !important                    
 
 .section-our-portfolio
     .container-header-portfolio
