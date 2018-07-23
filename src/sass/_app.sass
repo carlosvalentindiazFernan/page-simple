@@ -3,3 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,900');
 
 
+@mixin listMixin($color-font)
+    ul
+        list-style-type: none
+        overflow: hidden
+        font-weight: 200
+        margin-right: 2em
+        li
+            float: right
+
+        li a
+            color: $color-font
+            margin-left: 1em            
+            display: block
+            text-decoration: none
+            text-align: center
