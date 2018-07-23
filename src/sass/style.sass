@@ -65,6 +65,34 @@ body
             li
                 padding: 0.5em
 
+    .container-grib
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap
+        flex-direction: column
+        .container-grib-image
+            width: 70%
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+            
+            @for $i from 1 through 11
+                @if $i % 2  == 0
+                    .img-#{$i} 
+                        width: 90%
+                        padding: 0.5em
+                @else
+                    .img-#{$i} 
+                        width: 70%;
+                        padding: 0.5em
+        
+            @media only screen and (max-width: 768px)
+                img
+                    width: 100% !important
+            
+        button
+            @include buttonMixin($accent-color,$primary-color,3em)
+        
 
 .section-project
     display: flex
@@ -99,6 +127,7 @@ footer
         justify-content: space-around
         font-weight: 200
         width: 100%
+
         .asent-news
             display: flex
             flex-direction: column
@@ -108,9 +137,7 @@ footer
                 height: 5vh
                 
             button
-                background: $primary-color
-                cursor: pointer
-                height: 5vh
+                @include buttonMixin($primary-color,$accent-color,5vh)
 
         .asent-post
             .container-post
@@ -138,6 +165,4 @@ p.header-asent
 .asent-icons
     display: flex
     justify-content: space-between
-
-.down-menu
-    p.date-page-footer
+    
