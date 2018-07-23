@@ -1,10 +1,7 @@
-@import 'color' 
-@import 'fonts'
-@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,900');
-
+@import 'app'
 
 body
-    background: #ffffff
+    background: $primary-color
     font-family: 'Muli', sans-serif
     font-weight: 400
     margin:  0
@@ -33,7 +30,7 @@ body
                 float: right
 
             li a
-                color: black
+                color: $accent-color
                 margin-left: 1em            
                 display: block
                 text-decoration: none
@@ -49,10 +46,14 @@ body
             font-size: 3em
 
         .description-slider
+            display: inline-flex
             font-weight: 300
             font-size: 1em
             margin-top: -3em
 
+        .text-all-projects
+            margin-left: 10em
+                    
 
 .section-our-portfolio
     .container-header-portfolio
@@ -70,6 +71,7 @@ body
             display: flex
             justify-content: center
             align-items: center
+            flex-wrap: wrap
 
             li
                 padding: 0.5em
@@ -85,8 +87,8 @@ body
         font-size: 20px
     button
         margin-left: 1em
-        background: black
-        color: #ffffff
+        background: $accent-color
+        color: $primary-color
         border: 0
         padding: 1em
 
@@ -96,26 +98,29 @@ section.section-project
 
 
 footer
-    background: #2b2b2b
-    color: #ffffff
-    padding: 2em
+    background: $footer-color
+    color: $primary-color
+    height: 100%
+    display: flex
+    flex-wrap: wrap
     .container-footer
         display: flex
         flex-wrap: wrap
         justify-content: space-around
         font-weight: 200
+        width: 100%
         .asent-news
             display: flex
             flex-direction: column
             input
-                background: #2b2b2b
+                background: $footer-color
                 border: 0
-                height: 6vh
+                height: 5vh
                 
             button
-                background: #ffffff
+                background: $primary-color
                 cursor: pointer
-                height: 6vh
+                height: 5vh
 
         .asent-post
             .container-post
@@ -127,7 +132,8 @@ footer
                     font-weight: 600
     
     .down-footer
-        border-top-color: #767676
+        width: 100%
+        border-top-color: $second-accent-color
         border-top-style: solid
         p.date-page-footer
             float: left
@@ -141,7 +147,7 @@ footer
                 float: right
 
             li a
-                color: #ffffff
+                color: $primary-color
                 margin-left: 1em            
                 display: block
                 text-decoration: none
